@@ -18,8 +18,18 @@ import Foundation
 ///  ВНИМАНИЕ: Проверочные функции принимают только эти результаты!
 
 private func bmi(weight: Int, height: Double) -> String? {
-    // тут Ваш код
-    return nil
+    let bodyMassIndex: Double = Double(weight) / height / height    //Calc BMI
+    var bmiString: String
+
+    switch bodyMassIndex {
+        case ...18.5: bmiString = "Underweight"
+        case ...25: bmiString = "Normal"
+        case ...30: bmiString = "Overweight"
+        case 30.01... : bmiString = "Obese"
+        default: bmiString = "Data don't valid"
+    }
+
+    return bmiString
 }
 
 // --------------- Тестовая функция для проверки ----------------

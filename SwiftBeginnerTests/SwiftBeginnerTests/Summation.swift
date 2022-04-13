@@ -10,10 +10,16 @@ import Foundation
 //TODO: Написать функцию, которая возвращает сумму чисел в диапазоне от 1 до num (Например summation(num: 3) = 6)
 
 private func summation(num: Int) -> Int? {
-    // тут Ваш код
-    return nil
+    var summ = 0
+    if num > 0 {
+        for i in 1...num {
+            summ += i
+        }
+    } else {
+        print("Data filed")
+    }
+    return summ
 }
-
 
 // --------------- Тестовая функция для проверки ----------------
 
