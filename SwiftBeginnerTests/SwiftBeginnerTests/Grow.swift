@@ -10,8 +10,11 @@ import Foundation
 //TODO: Написать функцию, которая возвращает элементы числового массива, перемноженные между собой [1,2,3] = 6
 
 private func grow(arr: [Int]) -> Int? {
-    // тут Ваш код
-    return nil
+    var productOfNumbers: Int = 1
+    for i in arr {
+            productOfNumbers *= i
+        }
+    return productOfNumbers
 }
 
 

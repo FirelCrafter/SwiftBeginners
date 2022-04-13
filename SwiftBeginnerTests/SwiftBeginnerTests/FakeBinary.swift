@@ -12,8 +12,20 @@ import Foundation
 /// Получается своеборазный бинарный код а-ля "0001101001010"
 
 private func fakeBin(digits: String) -> String? {
-    // тут Ваш код
-    return nil
+    let fakeNumber = Array(digits)
+    var outString: String = ""
+    for i in fakeNumber {
+        let charNumb = Int(String(i))
+        if charNumb != nil {       
+            if charNumb! < 5 {
+                outString += "0" 
+            } else {
+                outString += "1" 
+            }
+        }
+    }
+
+    return outString
 }
 
 
