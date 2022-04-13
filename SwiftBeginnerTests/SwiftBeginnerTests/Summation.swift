@@ -9,9 +9,17 @@ import Foundation
 
 //TODO: Написать функцию, которая возвращает сумму чисел в диапазоне от 1 до num (Например summation(num: 3) = 6)
 
+import Foundation
+
+//TODO: Написать функцию, которая возвращает сумму чисел в диапазоне от 1 до num (Например summation(num: 3) = 6)
+
 private func summation(num: Int) -> Int? {
-    // тут Ваш код
-    return nil
+   
+    var result: Int = 0
+    for i in 1...num {
+        result += i
+    }
+    return result
 }
 
 

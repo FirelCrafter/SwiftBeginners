@@ -10,10 +10,14 @@ import Foundation
 //TODO: Напишите функцию, которая берет на вход число и возвращает массив этого числа, развернутый в обратном порядке (например 123 = [3,2,1])
 
 private func digitize(num: Int) -> [Int]? {
-    // тут Ваш код
-    return nil
+    let strStr = String(num)
+    var backwardArray:[Int] = []
+    for i in (0..<strStr.count).reversed() {
+        let chrInt = Int(String(strStr[strStr.index(strStr.startIndex, offsetBy: i)])) ?? 0
+        backwardArray.append(chrInt)
+    }
+    return backwardArray
 }
-
 
 
 // --------------- Тестовая функция для проверки ----------------
