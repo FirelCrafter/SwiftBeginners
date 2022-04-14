@@ -28,6 +28,19 @@ private func bmi(weight: Int, height: Double) -> String? {
     
     return diagnosis
     
+    // для языка swift существует оператор switch если мы хотим перебрать несколько условий
+    /*
+    switch Double(weight) / pow(height, 2) {
+    case ...18.5:
+        return "Underweight"
+    case ...25.0:
+        return "Normal"
+    case ...30.0:
+        return "Overweight"
+    default:
+        return "Obese"
+    }
+    */
 }
 
 // --------------- Тестовая функция для проверки ----------------

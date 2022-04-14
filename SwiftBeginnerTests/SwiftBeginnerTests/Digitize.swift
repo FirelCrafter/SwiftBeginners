@@ -17,6 +17,9 @@ private func digitize(num: Int) -> [Int]? {
         backwardArray.append(chrInt)
     }
     return backwardArray
+    
+    // тоже самое как и в FakeBinary
+//    return String(num).compactMap { Int(String($0)) }.reversed()
 }
 
 

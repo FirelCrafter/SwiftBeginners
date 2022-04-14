@@ -15,6 +15,9 @@ private func grow(arr: [Int]) -> Int? {
         result *= arr[i]
     }
     return result
+    
+    // для этого существует функция .reduce
+//    return arr.reduce(1,*)
 }
 
 // --------------- Тестовая функция для проверки ----------------

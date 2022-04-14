@@ -26,6 +26,9 @@ private func fakeBin(digits: String) -> String? {
             }
         }
     return result
+    
+    // оператор .map позволяет уместить решение в одну строку
+//    return String(digits.map { Int(String($0))! >= 5 ?  "1" : "0" })
 }
 
 

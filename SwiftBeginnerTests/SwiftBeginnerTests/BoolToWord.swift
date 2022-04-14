@@ -16,6 +16,9 @@ private func boolToWord(bool: Bool) -> String? {
     } else {
         return "No"
     }
+    
+    // В языке swift (так же как и в С) есть условый оператор
+    // return bool ? "Yes" : "No"
         
 }
 

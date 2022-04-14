@@ -20,6 +20,9 @@ private func summation(num: Int) -> Int? {
         result += i
     }
     return result
+    
+    // простая формула выполняется проще и быстрее, чем цикл
+//    return num * (1 + num) / 2
 }
 
 
