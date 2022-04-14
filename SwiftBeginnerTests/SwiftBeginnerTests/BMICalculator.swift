@@ -18,8 +18,29 @@ import Foundation
 ///  ВНИМАНИЕ: Проверочные функции принимают только эти результаты!
 
 private func bmi(weight: Int, height: Double) -> String? {
-    // тут Ваш код
-    return nil
+    var diagnosis:String = ""
+    
+    let bmi = Double(weight) / (height*height)
+    if bmi <= 18.5 { diagnosis = "Underweight" }
+    if (bmi > 18.5)&&(bmi<=25.0) { diagnosis = "Normal" }
+    if (bmi > 25)&&(bmi<=30.0) { diagnosis = "Overweight" }
+    if bmi > 30.0 { diagnosis = "Obese" }
+    
+    return diagnosis
+    
+    // для языка swift существует оператор switch если мы хотим перебрать несколько условий
+    /*
+    switch Double(weight) / pow(height, 2) {
+    case ...18.5:
+        return "Underweight"
+    case ...25.0:
+        return "Normal"
+    case ...30.0:
+        return "Overweight"
+    default:
+        return "Obese"
+    }
+    */
 }
 
 // --------------- Тестовая функция для проверки ----------------
